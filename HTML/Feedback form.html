@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback form</title>
+    <style>
+        label{
+            font-weight: bold;
+        }
+        body{
+            border:3px solid black;
+            border-radius: 5px;
+            width: 400px;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+        .a{
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="all">
+        <h1>Course Feedback Form</h1>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="id">Student ID:</label>
+        <input type="text" name="id" id="id"><br><br>
+        <label for="mail">e-Mail:</label>
+        <input type="email" id="mail" name="mail"><br><br>
+        <label for="course">Choosen Course:</label>
+        <input type="text" name="course" id="course"><br><br>
+        <label for="name">Instructor Name:</label>
+        <input type="text" name="name" id="name"><br><br>
+        <label for="q1">1. How would you rate the overall quality of this online course?</label><br>
+        <div class="a">
+             <input type="radio" name="1" id="1">
+             <label for="1">Excellent</label><br>
+             <input type="radio" name="2" id="2">
+             <label for="2">Good</label><br>
+             <input type="radio" name="3" id="3">
+             <label for="3">Average</label><br>
+             <input type="radio" name="4" id="4">
+             <label for="4">Poor</label>
+        </div><br>
+        <label for="q2">2.How satisfied are you with the course content?</label><br>
+        <div class="a">
+            <input type="radio" name="1" id="1">
+            <label for="1">Excellent</label><br>
+            <input type="radio" name="2" id="2">
+            <label for="2">Good</label><br>
+            <input type="radio" name="3" id="3">
+            <label for="3">Average</label><br>
+            <input type="radio" name="4" id="4">
+            <label for="4">Poor</label>
+           </div><br>
+            <label for="q3">3.How would you rate the instructor's effectiveness?</label><br>
+            <div class="a">
+                <input type="radio" name="1" id="1">
+                 <label for="1">Excellent</label><br>
+                 <input type="radio" name="2" id="2">
+                 <label for="2">Good</label><br>
+                 <input type="radio" name="3" id="3">
+                 <label for="3">Average</label><br>
+                 <input type="radio" name="4" id="4">
+                 <label for="4">Poor</label>
+                </div><br>
+                <label for="q4">4.How easy was it to navigate the course platform?</label><br>
+                <div class="a">
+                    <input type="radio" name="1" id="1">
+                    <label for="1">Excellent</label><br>
+                    <input type="radio" name="2" id="2">
+                    <label for="2">Good</label><br>
+                    <input type="radio" name="3" id="3">
+                    <label for="3">Average</label><br>
+                    <input type="radio" name="4" id="4">
+                    <label for="4">Poor</label>
+                </div><br>
+                <label for="q5">5.How likely are you to recommend this course to a friend or colleague?</label><br>
+                <div class="a">
+                    <input type="radio" name="1" id="1">
+                    <label for="1">Excellent</label><br>
+                    <input type="radio" name="2" id="2">
+                    <label for="2">Good</label><br>
+                    <input type="radio" name="3" id="3">
+                    <label for="3">Average</label><br>
+                    <input type="radio" name="4" id="4">
+                    <label for="4">Poor</label>
+                 </div><br>
+                </label><br>
+                <div class="a">
+                <label for="comment">Comment</label><br>
+                <textarea name=" comment" id="comment" rows="4" cols="40"></textarea>
+                </div><br>
+                <div class="a">
+                <input type="submit" name="submit" id="submit">
+                </div>
+            </div>
+        </body>
+        </html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Deactivation</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+        .all{
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align:center;
+            margin:auto;
+            margin-top: 250px;
+        }
+        .a{
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        input,select,textarea{
+            width: 280px;
+        }
+        button{
+            background-color: rgb(233, 77, 50);
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <h2>Deactivate Account</h2>
+        <form action="/submit-deactivation" method="post">
+            <div class="a">
+                <label for="username">Username</label><br>
+                <input type="text" id="username" name="username" placeholder="Enter your username"><br>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password" placeholder="Enter your password">
+            </div>
+            <div class="a">
+                <label for="reason">Reason for Deactivation</label><br>
+                <select id="reason" name="reason" required>
+                    <option value="">Select a reason</option>
+                    <option value="privacy">Privacy concerns</option>
+                    <option value="not-useful">Not finding it useful</option>
+                    <option value="too-distracting">Too distracting</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="a">
+                <label for="comments">Additional Comments</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </div>
+            <button type="submit">Deactivate</button>
+        </form>
+    </div>
+</body>
+</html>
